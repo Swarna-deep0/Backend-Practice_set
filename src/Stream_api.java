@@ -65,5 +65,11 @@ public class Stream_api {
 
         highestByDept.forEach((dept, emp) ->
                 System.out.println(dept + ": " + emp));
+        
+        // Convert a list of strings to a single comma-separated string using Collectors.joining().
+        List<String> L1 = List.of("sunil","anil","kunal");
+        String result = L1.stream()
+                .collect(Collectors.joining(","));
+        System.out.println("Joined: " + result);
     }
 }
